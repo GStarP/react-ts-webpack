@@ -13,8 +13,8 @@ How can we build a React + TS + Webpack project architecture without any cli?
 This project holds multiple branches, each of them represent one stage while building the architecture step by step:
 
 - webpack: Show HTML page in browser
-- react: React.js support
-- ts: TypeScript support
-- Maybe more......
+- react: Support React.js without JSX
+- react-jsx: Support React.js with JSX
+- ts: Support TypeScript
 
-Switch branch and follow `README.md` to try.
+Switch branch and read their `README.md` to get more details.
