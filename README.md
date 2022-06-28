@@ -1,20 +1,28 @@
-# React-TS-Webpack
+# Show HTML page in browser
 
-We always use `create-react-app` to start development quickly.
+## Quick Start
 
-This lib then use `react-scripts` to execute cmd.
+```bash
+npm i
+npm run start
+```
 
-But how does it work behind all of these?
+## [HtmlWebpackPlugin](https://webpack.js.org/plugins/html-webpack-plugin/)
 
-How can we build a React + TS + Webpack project architecture without any cli?
+```bash
+npm i html-webpack-plugin -D
+```
 
-## Quick start
+Configured in [webpack.config.js](./webpack.config.js): plugins.
 
-This project holds multiple branches, each of them represent one stage while building the architecture step by step:
+This plugin will generate or use exsited `.html` file, and import your `.js` and `.css` file in output path with `<script>` and `<link>`, which simplifies your work for connecting them.
 
-- webpack: Show HTML page in browser
-- react: React.js support
-- ts: TypeScript support
-- Maybe more......
+## [WebpackDevServer](https://webpack.js.org/configuration/dev-server/)
 
-Switch branch and follow `README.md` to try.
+```bash
+npm i webpack-dev-server -D
+```
+
+Configured in [webpack.config.js](./webpack.config.js): devServer.
+
+This tool will develop your web application quickly, and support hot uploading.
