@@ -1,4 +1,4 @@
-# Show HTML page in browser
+# React.js without JSX
 
 ## Quick Start
 
@@ -7,22 +7,14 @@ npm i
 npm run start
 ```
 
-## [HtmlWebpackPlugin](https://webpack.js.org/plugins/html-webpack-plugin/)
+## [React.js](https://reactjs.org/)
 
 ```bash
-npm i html-webpack-plugin -D
+npm i react react-dom --save
 ```
 
-Configured in [webpack.config.js](./webpack.config.js): plugins.
+After dependencies installed, you can directly write React code in [index.js](./src/index.js).
 
-This plugin will generate or use exsited `.html` file, and import your `.js` and `.css` file in output path with `<script>` and `<link>`, which simplifies your work for connecting them.
+JSX is just syntactic sugar for calling `React.createElement()`, so it need to be parsed and transformed.
 
-## [WebpackDevServer](https://webpack.js.org/configuration/dev-server/)
-
-```bash
-npm i webpack-dev-server -D
-```
-
-Configured in [webpack.config.js](./webpack.config.js): devServer.
-
-This tool will develop your web application quickly, and support hot uploading.
+Since we havn't done these, we can only support React.js without JSX.
