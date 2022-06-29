@@ -16,5 +16,6 @@ This project holds multiple branches, each of them represent one stage while bui
 - react: Support React.js without JSX
 - react-jsx: Support React.js with JSX
 - ts: Support TypeScript
+- css: Support import CSS
 
 Switch branch and read their `README.md` to get more details.
