@@ -2,11 +2,9 @@ import React from 'react'
 import { createRoot } from 'react-dom/client'
 
 function App() {
-  // you can only use creatElement instead of JSX
-  return React.createElement('h2', null, 'App')
+  return<h2>App</h2>
 }
 
 const root = createRoot(document.getElementById('root'))
 
-// also cannot use <App />
-root.render(App())
+root.render(<App />)
