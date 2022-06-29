@@ -1,4 +1,4 @@
-# React.js with JSX
+# TypeScript and TSX
 
 ## Quick Start
 
@@ -7,15 +7,22 @@ npm i
 npm run start
 ```
 
-## [babel-loader](https://www.webpackjs.com/loaders/babel-loader/)
+## [ts-loader](https://github.com/TypeStrong/ts-loader)
 
 ```bash
-npm install babel-loader @babel/core @babel/preset-react -D
+npm install typescript ts-loader -D
 ```
 
-Configured in [webpack.config.js](./webpack.config.js): module.rules
+Configured in [webpack.config.js](./webpack.config.js): module.rules. TS compile configuration is in [tsconfig.json](./tsconfig.json).
 
-JSX is just syntactic sugar for calling `React.createElement()`, so it need to be parsed and transformed.
-babel-loader will do this for you.
- 
-Besides setting babel-loader as the loader to parse `.js`/`.jsx` files, we also need to declare preset `@babel/preset-react`, which tells babel-loader how to handle React.js code.
+ts-loader can parse JSX as well (`"jsx": "react-jsx"` in [tsconfig.json](./tsconfig.json)), so we don't need babel-loader and @preset/react any more.
+
+```bash
+npm install @types/react @types/react-dom -D
+```
+
+After ts-loader configured, we also need to install type libs of React.js packages.
+
+Then `.ts` file will not show error......Maybe.
+
+**Attention：** `.ts` file cannot understand JSX, but can import `.tsx` file.
